@@ -73,7 +73,6 @@ export class AppComponent {
         }
       })
     }
-    console.log("value == ", value, this.or, this.and, this.result);
   }
 
   public changeList(index: number, value: any) {
@@ -82,7 +81,6 @@ export class AppComponent {
         this.result = value;
       } else {
         this.values[index] = value;
-        console.log("value == ", value, index, this.values);
         this.setResult(value);
       }
     }
